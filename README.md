@@ -1,3 +1,38 @@
+- Folder Explain
+- data
+  - PDFAmerican: Put American .pdf file here
+  - PDFTaiwan: Put Taiwan .pdf file here
+  - XMLAmerican: After notebooks/data_processing/xml_parse.ipynb the output here
+  - XMLTaiwan: same above
+  - CSV: After data process csv be here. Experiment output here too in different folder.
+  - CSV25Company: In Second experiment, using OpenAI to get more training data (25 company), here is the Second Experiment output csv.
+- model
+  - Training model output
+- notebooks
+  - data_processing: Data process code here
+    - .env.example: Put OpenAI Key here
+    - openai.ipynb: Use file In /csv/xml_taiwan/ to add OpenAI label on it and output at /csv/predict_taiwan_3label
+    - xml_parse.ipynb: Parse xml to csv
+  - model_training: Train model code here
+    - finetune: Train code
+    - multi_label: Try to evaluate the output
+  - utils: Many reuse code for data pre/post process code here
+    - UsefulTool: Code depositary for some used code segment but not use in normal workflow
+    - clean_gpt_label: Clean the label gen from OpenAI turbo-3.5
+    - gpt_prompting: Prompt for turbo-3.5
+    - utils: Pre/post process useful code
+    - xml_parse: Turn xml to csv here
+- visualization
+  - MainRadar: Import code from MultiRadar and draw the radar chart
+  - MultiRadar: code for MultiRadar class
+  - bar: bar chart (unused)
+  - draw: old code for draw (unused)
+  - makegif: Concate the output of radar chart to gif (used before, not now)
+  - matplot: unused
+  - multiradar1: unused
+  - radar: unused
+  - readcsv: MultiRadar use for read csv
+- scripts: unused now
 - CSV structure naming
 1. Sperate by multi_label and one_label
 2. source started mean csv converted by xml, or adding label by GPT as raw training data
