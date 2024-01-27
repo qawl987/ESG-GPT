@@ -33,6 +33,29 @@ def get_lda_table()-> dict:
     }
     return lda_table
 
+def get_lda_list(label: int):
+    if label == 26:
+        return ['Business_Ethics:0', 'Data_Security:1', 'Access_And_Affordability:2', 'Business_Model_Resilience:3',
+                'Competitive_Behavior:4', 'Critical_Incident_Risk_Management:5', 'Customer_Welfare:6',
+                'Director_Removal:7', 'Employee_Engagement_Inclusion_And_Diversity:8', 'Employee_Health_And_Safety:9',
+                'Human_Rights_And_Community_Relations:10', 'Labor_Practices:11', 'Management_Of_Legal_And_Regulatory_Framework:12',
+                'Physical_Impacts_Of_Climate_Change:13', 'Product_Quality_And_Safety:14', 'Product_Design_And_Lifecycle_Management:15',
+                'Selling_Practices_And_Product_Labeling:16', 'Supply_Chain_Management:17', 'Systemic_Risk_Management:18',
+                'Waste_And_Hazardous_Materials_Management:19', 'Water_And_Wastewater_Management:20', 'Air_Quality:21',
+                'Customer_Privacy:22', 'Ecological_Impacts:23', 'Energy_Management:24', 'GHG_Emissions:25'
+            ] 
+    elif label == 27:
+        return ['Business Ethics:0', 'Data Security:1', 'Access And Affordability:2', 'Business Model Resilience:3',
+            'Competitive Behavior:4', 'Critical Incident Risk Management:5', 'Customer Welfare:6',
+            'Director Removal:7', 'Employee Engagement Inclusion And Diversity:8', 'Employee Health And Safety:9',
+            'Human Rights And Community Relations:10', 'Labor Practices:11', 'Management Of Legal And Regulatory Framework:12',
+            'Physical Impacts Of Climate Change:13', 'Product Quality And Safety:14', 'Product Design And Lifecycle Management:15',
+            'Selling Practices And Product Labeling:16', 'Supply Chain Management:17', 'Systemic Risk Management:18',
+            'Waste And Hazardous Materials Management:19', 'Water And Wastewater Management:20', 'Air Quality:21',
+            'Customer Privacy:22', 'Ecological Impacts:23', 'Energy Management:24', 'GHG Emissions:25', 'No Enough Information:26'
+            ]
+    else:
+        raise ValueError("Label number can only be 26 or 27")
 
 def get_reversed_dict()->dict:
     lda_table = get_lda_table()
