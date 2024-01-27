@@ -16,6 +16,10 @@
 5. Visualization (Radar chart)
    - Run notebooks/visualization/main_radar.ipynb
 
+# Installation
+
+`pip install -r requirements.txt`
+
 # How to run each file
 
 ### Get PDF and Transform PDF to XML not discuss here
