@@ -114,7 +114,7 @@ class MultiRadar():
             values = self._read_csv(f'{csv_path}/{filename}')
             values += values[:1]
             filename = filename.strip('.csv')
-            self._plot(values, f'{filename.strip('.csv')}')
+            self._plot(values, f'{filename}')
             self._save_plot(f'{self.PNG_PATH}/{self.NATION}', f'{filename} vs. average.png', f'{filename} vs. average')
             
     def draw_full25(self, csv_path):
