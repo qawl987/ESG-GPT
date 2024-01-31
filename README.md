@@ -16,9 +16,16 @@
 5. Visualization (Radar chart)
    - Run notebooks/visualization/main_radar.ipynb
 
-# Installation
+# Installation & Environment
+
+### Installation
 
 `pip install -r requirements.txt`
+
+### Environment
+
+- Python 3.10
+- CUDA 12.1
 
 # How to run each file
 
