@@ -49,7 +49,7 @@ MIN_SENTENCE_LEN = 10
 2. Run the cell
 
 ```
-xml_parse = XmlParse(NATION, XML_PATH, CSV_PATH, )
+xml_parse = XmlParse(NATION, XML_PATH, CSV_PATH, MIN_SENTENCE_LEN)
 xml_parse.parse_xml(file_list)
 ```
 
